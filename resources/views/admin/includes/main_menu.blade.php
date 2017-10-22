@@ -17,13 +17,10 @@
             <a href="{{URL::to('/home')}}"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
         </li>
         <li>
-            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> User Info <span class="fa arrow"></span></a>
-            <ul class="nav nav-second-level">
+            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Customer Info<span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">                
                 <li>
-                    <a href="{{ url('/create-user') }}">Create User</a>
-                </li>
-                <li>
-                    <a href="{{url('/manage-category')}}">Manage User</a>
+                    <a href="{{url('/manage-customer')}}">Manage Customer</a>
                 </li>
             </ul>
             <!-- /.nav-second-level -->

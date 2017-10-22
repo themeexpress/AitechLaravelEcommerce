@@ -51,6 +51,9 @@ Route::get('/published-category/{id}', 'CategoryController@published_category')-
 Route::get('/edit-category/{id}', 'CategoryController@edit_category')->middleware('authenticateMiddleware');
 Route::post('/update-category', 'CategoryController@update_category')->middleware('authenticateMiddleware');
 Route::get('/delete-category/{id}', 'CategoryController@delete_category')->middleware('authenticateMiddleware');
+/*customers*/
+Route::get('manage-customer','UserController@manageCustomer')->middleware('authenticateMiddleware');
+Route::get('/delete-customer/{id}','UserController@deleteCustomer')->middleware('authenticateMiddleware');
 
 /*Manufacturer part*/
 Route::get('/add-manufacturer', 'ManufacturerController@create_manufacturer')->middleware('authenticateMiddleware');
