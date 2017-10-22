@@ -43,12 +43,10 @@ class ProductController extends Controller {
         $product_info->save();
         return redirect('/add-product')->with('message', 'Product info create successfully');
     }
-
       public function manageProduct() {
         $allproducts = Product::all();
         //$manufacturer_info = Manufacturer::where('publication_status', 1)->get();
         //['all_published_category' => $category_info, 'all_published_manufacturer' => $manufacturer_info]
-
         $data = array();
         $data['top_menu'] = view('admin.includes.top_menu');
         $data['main_menu'] = view('admin.includes.main_menu');
@@ -59,6 +57,17 @@ class ProductController extends Controller {
         $products = Product::find($id);
         $products->delete();
         return redirect('/manage-product')->with('message', 'Product deleted successfully');
+        
+    }
+    public function SearchProduct(Request $request){
+        $search=$request->search_item;
+        //echo $search;
+        $allproducts = Product::all();
+        $product_info=Product::where('product_name','LIKE',"%$search%")->get();
+      
+        return view('front_end.home.home_content', ['all_published_product' => $product_info]);
+        
+        
         
     }
 

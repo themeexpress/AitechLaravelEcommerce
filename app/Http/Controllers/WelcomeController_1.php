@@ -15,7 +15,7 @@ class WelcomeController extends Controller {
         $data = array();
         $data['header_content'] = view('front_end.includes.header');
         $data['main_menu'] = view('front_end.includes.main_menu', ['all_published_category' => $category_info]);
-        $data['slider'] = view('front_end.slider.home_slider');
+        //$data['slider'] = view('front_end.slider.home_slider');
         $data['main_content'] = view('front_end.home.home_content', ['all_published_product' => $product_info]);
         $data['footer'] = view('front_end.includes.footer');
         return view('front_end.master')->with($data);

@@ -53,7 +53,7 @@
             <!-- /.nav-second-level -->
         </li>
         <li>
-            <a href="#"><i class="fa fa-wrench fa-fw"></i> Product Info<span class="fa arrow"></span></a>
+            <a href="#"><i class="fa fa-life-ring"></i> Product Info<span class="fa arrow"></span></a>
             <ul class="nav nav-second-level">
                 <li>
                     <a href="{{url('/add-product')}}">Add Product</a>
@@ -68,7 +68,7 @@
             <a href="#"><i class="fa fa-sitemap fa-fw"></i> Order Info<span class="fa arrow"></span></a>
             <ul class="nav nav-second-level">
                 <li>
-                    <a href="#">Order Management</a>
+                    <a href="{{url('/order-management')}}">Order Management</a>
                 </li>
                
                 
@@ -76,14 +76,11 @@
             <!-- /.nav-second-level -->
         </li>
         <li>
-            <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
+            <a href="#"><i class="fa fa-area-chart"></i> All Statistics<span class="fa arrow"></span></a>
             <ul class="nav nav-second-level">
                 <li>
-                    <a href="blank.html">Blank Page</a>
-                </li>
-                <li>
-                    <a href="login.html">Login Page</a>
-                </li>
+                    <a href="#"> User Statistics</a>
+                </li>                
             </ul>
             <!-- /.nav-second-level -->
         </li>

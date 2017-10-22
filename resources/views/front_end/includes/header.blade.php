@@ -3,11 +3,10 @@
         <a href="#">Today's special Offers !</a>
     </div>
     <div class="w3l_search">
-        <form action="#" method="post">
-            <input type="text" name="Product" value="Search a product..." onfocus="this.value = '';" onblur="if (this.value == '') {
-                                this.value = 'Search a product...';
-                            }" required="">
-            <input type="submit" value=" ">
+        <form action="search_product" method="post">
+            <input type="text" name="search_item"/>
+            <input type="hidden" name="_token" value="{{csrf_token()}}" />
+            <input type="submit" value="" class="">
         </form>
     </div>
     <div class="product_list_header">  

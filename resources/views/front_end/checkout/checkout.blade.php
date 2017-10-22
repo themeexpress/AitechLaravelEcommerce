@@ -58,31 +58,31 @@ Checkout
             <div class="panel-body">
                 {!! Form::open(array('url'=>'/new-checkout', 'role'=>'form', 'method'=>'POST', 'class' => 'form-horizontal')) !!}
                 <div class="form-group">
-                    <label class="control-label col-lg-3"> First Name </label>
+                    <label class="control-label col-lg-3"> First Name <span style="color:red;">*</span> </label>
                     <div class="col-lg-9">
                         <input type="text" name="first_name" required class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-lg-3">Last Name</label>
+                    <label class="control-label col-lg-3">Last Name <span style="color:red;">*</span></label>
                     <div class="col-lg-9">
                         <input type="text" name="last_name" required class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-lg-3">Email Address</label>
+                    <label class="control-label col-lg-3">Email Address <span style="color:red;">*</span></label>
                     <div class="col-lg-9">
                         <input type="email" name="email_address" required class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-lg-3">Password</label>
+                    <label class="control-label col-lg-3">Password <span style="color:red;">*</span></label>
                     <div class="col-lg-9">
                         <input type="password" name="password" required class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-lg-3">Phoner Number</label>
+                    <label class="control-label col-lg-3">Phoner Number <span style="color:red;">*</span></label>
                     <div class="col-lg-9">
                         <input type="number" name="phone_number" required class="form-control">
                     </div>

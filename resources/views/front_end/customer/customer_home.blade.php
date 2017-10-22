@@ -6,7 +6,7 @@
     
 <div class="top-brands">
     <div class="container">
-    <h4 class="success text-center">Your Order is successfully Submitted. You will contact with you shortly</h4>
+    <h4 class="success text-center">Your Order is successfully Submitted. We will contact with you shortly</h4>
         
         <div class="agile_top_brands_grids">
         

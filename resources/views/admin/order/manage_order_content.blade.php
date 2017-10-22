@@ -3,7 +3,7 @@
 @section('main_content')
 <div class="row">
     <div class="col-lg-12">
-        <h1 class="page-header">All Products and Information</h1>
+        <h1 class="page-header">All Order Information</h1>
     </div>
     <!-- /.col-lg-12 -->
 </div>
@@ -12,7 +12,7 @@
     <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="btn-success text-center">{{Session::get('message')}}</h3>
+                <h3 class="btn-success text-center"></h3>
             </div>
             <!-- /.panel-heading -->
             <div class="panel-body">
@@ -28,19 +28,19 @@
                         </tr>
                     </thead>
                     <tbody>
-                       @foreach($allproducts as $allproducts)
+                       
                         <tr class="odd gradeX">
-                            <td class="text-center">{{$allproducts->product_name}}</td>
-                       <td class="text-center">{{$allproducts->product_price}}</td>
-                       <td class="text-center">{{$allproducts->product_quantity}}</td>                                           
-                       <td class="text-center"><img style="height: 200px;width: 200px" src="{{asset($allproducts->product_image)}}"></td>
-                       <td class="text-center">{{$allproducts->publication_status}}</td>
+                            <td class="text-center"></td>
+                       <td class="text-center"></td>
+                       <td class="text-center"></td>                                           
+                       <td class="text-center"></td>
+                       <td class="text-center"</td>
                        <td class="text-center">
-                           <a href="{{url('delete-product/'.$allproducts->id)}}" class="btn btn-danger" title="Delete" onclick="return check_delete();"><span class="glyphicon glyphicon-trash"></span></a> 
-                           <a href="{{url('edit-product/'.$allproducts->id)}}" class="btn btn-success" title="Edit"><span class="glyphicon glyphicon-edit"></span></a>
+                           <a href="#" class="btn btn-danger" title="Delete"><span class="glyphicon glyphicon-trash"></span></a> 
+                           <a href="#" class="btn btn-success" title="Edit"><span class="glyphicon glyphicon-edit"></span></a>
                        </td>
                         </tr>
-                         @endforeach
+                        
                     </tbody>
                 </table>
             </div>

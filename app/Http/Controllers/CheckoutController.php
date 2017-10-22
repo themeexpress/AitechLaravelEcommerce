@@ -106,7 +106,7 @@ class CheckoutController extends Controller {
     }
 
     public function customerHome() {
-        return view('front_end.customer.customer_home',['message'=>'Thanks for your Valuable order. We will contact you shortly']);
+        return view('front_end.customer.customer_home',['message'=>'Thanks for your Valuable order. We will contact you.']);
     }
 
 }
