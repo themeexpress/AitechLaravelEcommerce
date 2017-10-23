@@ -38,6 +38,7 @@ Checkout
                     </div>
                 </div>
                 {!! Form::close() !!}
+                <a style="margin-left:158px;" href="{{url('/forget-password')}}"> Forget Password </a>
             </div>
         </div>
     </div>

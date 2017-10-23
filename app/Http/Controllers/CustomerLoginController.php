@@ -8,22 +8,16 @@ use App\Customer;
 class CustomerLoginController extends Controller
 {
     public function customerLogin(Request $request){
-        $email_address=$request->email_address;
-       
-        $customerData = Customer::all();        
-       
-        foreach ($customerData as $allcustomerinfo){
-            $Customer_email_address=$allcustomerinfo->email_address;
-            if($Customer_email_address==$email_address){
-                echo 'Match';
+        $email_address=$request->input('email_address');
+        $password=bcrypt($request->input('password'));
+        
+        $customerinfo=Customer::where('email_address', '=', $email_address)->where('password', '=', $password);
+       if($customerinfo){
+                return view('customer.customerprofile',['customerinfo'=>$customerinfo]);
                 
             }else{
                 echo 'No Match';
-            }
-        }
-        ;
-        
-     
-        
-    }
+            }        
+       
+}
 }

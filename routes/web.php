@@ -76,7 +76,7 @@ Route::post('/manage-order', 'ProductController@manageProduct')->middleware('aut
 
 /*Order Management*/
 Route::get('/order-management','OrderController@orderManage')->middleware('authenticateMiddleware');
-
+Route::get('delete-order/{id}','OrderController@deleteOrder')->middleware('authenticateMiddleware');
 /*user Management*/
 Route::get('/create-user', 'UserController@create_user');
 Route::post('/new-user', 'UserController@save_user');

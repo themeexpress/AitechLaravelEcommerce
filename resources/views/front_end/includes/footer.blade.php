@@ -21,29 +21,27 @@
         <div class="col-md-3 w3_footer_grid">
             <h3>information</h3>
             <ul class="w3_footer_grid_list">
-                <li><a href="events.html">Events</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="products.html">Best Deals</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="short-codes.html">Short Codes</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Best Deals</a></li>
+                <li><a href="#">Services</a></li>                
             </ul>
         </div>
         <div class="col-md-3 w3_footer_grid">
             <h3>policy info</h3>
             <ul class="w3_footer_grid_list">
-                <li><a href="faqs.html">FAQ</a></li>
-                <li><a href="privacy.html">privacy policy</a></li>
-                <li><a href="privacy.html">terms of use</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">terms of use</a></li>
             </ul>
         </div>
         <div class="col-md-3 w3_footer_grid">
             <h3>what in stores</h3>
             <ul class="w3_footer_grid_list">
-                <li><a href="pet.html">Pet Food</a></li>
-                <li><a href="frozen.html">Frozen Snacks</a></li>
-                <li><a href="kitchen.html">Kitchen</a></li>
-                <li><a href="products.html">Branded Foods</a></li>
-                <li><a href="household.html">Households</a></li>
+                <li><a href="#">Desktop Computers</a></li>
+                <li><a href="#">Laptop Computer</a></li>
+                <li><a href="#">Electronics</a></li>
+                            
             </ul>
         </div>
         <div class="col-md-3 w3_footer_grid">
@@ -52,9 +50,7 @@
                 <li><label class="fa fa-twitter" aria-hidden="true"></label><i>01 day ago</i><span>Non numquam <a href="#">http://sd.ds/13jklf#</a>
                         eius modi tempora incidunt ut labore et
                         <a href="#">http://sd.ds/1389kjklf#</a>quo nulla.</span></li>
-                <li><label class="fa fa-twitter" aria-hidden="true"></label><i>02 day ago</i><span>Con numquam <a href="#">http://fd.uf/56hfg#</a>
-                        eius modi tempora incidunt ut labore et
-                        <a href="#">http://fd.uf/56hfg#</a>quo nulla.</span></li>
+                
             </ul>
         </div>
         <div class="clearfix"> </div>
