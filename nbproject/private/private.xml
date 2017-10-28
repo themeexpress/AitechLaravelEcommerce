@@ -3,10 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/G:/xammp/htdocs/aitechshop/app/Http/Controllers/CartController.php</file>
+            <file>file:/G:/xammp/htdocs/aitechshop/routes/web.php</file>
+            <file>file:/G:/xammp/htdocs/aitechshop/resources/views/front_end/checkout/checkout.blade.php</file>
             <file>file:/G:/xammp/htdocs/aitechshop/app/Http/Controllers/CheckoutController.php</file>
-            <file>file:/G:/xammp/htdocs/aitechshop/app/Http/Controllers/AdminController.php</file>
-            <file>file:/G:/xammp/htdocs/aitechshop/app/Http/Controllers/WelcomeController.php</file>
+            <file>file:/G:/xammp/htdocs/aitechshop/resources/views/front_end/includes/header.blade.php</file>
+            <file>file:/G:/xammp/htdocs/aitechshop/app/Http/Controllers/CustomerLoginController.php</file>
+            <file>file:/G:/xammp/htdocs/aitechshop/resources/views/customer/cusotmerlogin.blade.php</file>
         </group>
     </open-files>
 </project-private>
