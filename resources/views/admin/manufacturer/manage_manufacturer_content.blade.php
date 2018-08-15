@@ -28,7 +28,7 @@
                         <?php foreach ($all_manufacturer as $v_manufacturer) {  ?>
                         <tr class="odd gradeX">
                             <td><?php echo $v_manufacturer->manufacturer_name; ?></td>
-                            <td><?php echo $v_manufacturer->manufacturer_description; ?></td>
+                            <td><?php echo str_limit($v_manufacturer->manufacturer_description, 50,'...'); ?></td>
                             <td><?php 
                                 if ($v_manufacturer->publication_status == 1) {
                                     echo 'Published';

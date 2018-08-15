@@ -7,7 +7,7 @@
         <div class="w3ls_w3l_banner_nav_right_grid1">
             <?php foreach ($category_product as $v_all_published_category) { ?>
             <div class="col-md-3 w3ls_w3l_banner_left">
-                <div class="hover14 column">
+                {{-- <div class="hover14 column">
                     <div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
                         <div class="agile_top_brand_left_grid_pos">
                             <img src="{{asset($v_all_published_category->product_image)}}" alt=" " class="img-responsive" />
@@ -21,7 +21,7 @@
                                         <h4>BDT {{ $v_all_published_category->product_price }}</h4>
                                     </div>
                                     <div class="snipcart-details">
-                                        {{-- <form action="#" method="post">
+                                        <form action="#" method="post">
                                             <fieldset>
                                                 <input type="hidden" name="cmd" value="_cart" />
                                                 <input type="hidden" name="add" value="1" />
@@ -34,9 +34,31 @@
                                                 <input type="hidden" name="cancel_return" value=" " />
                                                 <input type="submit" name="submit" value="Add to cart" class="button" />
                                             </fieldset>
-                                        </form> --}}
+                                        </form>
                                         <a class="btn btn-info" href="{{URL::to('/product-details/'.$v_all_published_category->id)}}"> ADD TO CART</a>
 
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                </div> --}}
+                <div class="hover14 column">
+                    <div class="agile_top_brand_left_grid">
+                        <div class="tag"><img src="{{asset($v_all_published_category->product_image )}}" alt=" " class="img-responsive" /></div>
+                        <div class="agile_top_brand_left_grid1">
+                            <figure>
+                                <div class="snipcart-item block" >
+                                    <div class="snipcart-thumb">
+                                        <a href="{{ URL::to('/product-details/'.$v_all_published_category->id) }}">
+                                           <br/> <br/><br/> <br/><br/><br/><br/>
+                                        </a>        
+                                        <p>{{$v_all_published_category->product_name}}</p>
+                                        <h4>BDT {{$v_all_published_category->product_price}} Tk.</h4>
+                                    </div>
+                                    <div class="snipcart-details top_brand_home_details">
+                                       
+                                        <a class="btn btn-info" href="{{ URL::to('/product-details/'.$v_all_published_category->id) }}"> ADD TO CART</a>
                                     </div>
                                 </div>
                             </figure>

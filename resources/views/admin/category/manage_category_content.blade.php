@@ -28,7 +28,7 @@
                         <?php foreach ($all_category as $v_category) {  ?>
                         <tr class="odd gradeX">
                             <td><?php echo $v_category->category_name; ?></td>
-                            <td><?php echo $v_category->category_description; ?></td>
+                            <td><?php echo str_limit($v_category->category_description, 50,'...'); ?></td>
                             <td><?php 
                                 if ($v_category->publication_status == 1) {
                                     echo 'Published';
